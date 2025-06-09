@@ -1,0 +1,16 @@
+app = "ssh"
+kill_signal = "SIGINT"
+kill_timeout = 5
+primary_region = "sin"
+
+[processes]
+   okokok = "/bin/sh -c /1.sh"
+
+[env]
+
+[experimental]
+  auto_rollback = true
+
+[[services]]
+  processes = ["okokok"]
+  
